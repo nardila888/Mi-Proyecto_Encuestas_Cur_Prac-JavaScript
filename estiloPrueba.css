@@ -1,0 +1,437 @@
+/*General*/
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans&display=swap%27%29%3B);
+@import url(https://fonts.googleapis.com/css2?family=Roboto%3Awght%40300&display=swap%27%29%3B);
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --green-dark:green;
+    --blue-heaven:#1A5276;
+    --brown-softly: #630d0d;
+    --blue-king:#05054e;
+    --blue-soft:#3b6df5;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 40px;
+  }
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*background-image: url(https://www.diariodelsur.com.co/wp-content/uploads/2022/11/Analitica-Futbol.jpg);*/
+    background-image: url(https://s1.1zoom.me/b5263/650/Footbal_Men_Ball_Two_Legs_Uniform_Grass_515024_2560x1440.jpg);
+    /*background-image: url(https://s1.1zoom.me/b4948/205/Footbal_Ball_Lawn_Stadium_561095_1600x1200.jpg);*/
+}
+img{ /*Estilos para el logotipo*/
+    width: 60px;
+    height: 60px;
+    
+  }
+
+  .boton{
+    background-color: var(--brown-softly);
+    color: white;
+    border: none;
+    padding: 20px;
+    font-size: 13px;
+  }
+  
+  .links a{
+    text-decoration: none;
+    color: var(--white);
+    display: block;
+    padding: 0px;
+    text-align: center;
+  }
+  .links{
+    background-color: var(--blue-soft);
+    width: 150px;
+    display: none;
+  }
+  .links a:hover{
+    background-color: var(--blue-heaven);
+  }
+  .desplegable:hover .links{
+    display: block;
+  }
+  
+  .boton1{
+    background-color: var(--blue-soft);
+    color: white;
+    text-align: center;
+    border: none;
+    padding: 21px;
+    font-size: 10.5px;
+    height: 19px;
+    width: 100px;
+    margin: auto;
+    padding: 16px 50px;
+    margin: 2px 1px;
+    cursor: pointer;
+    border-radius: 8px;    
+  }
+  .boton2{
+    background-color: var(--blue-soft);
+    color: white;
+    border: none;
+    padding: 21px;
+    font-size: 10.5px;
+    height: 19px;
+    width: 100px;
+    padding: 16px 50px;
+    margin: 2px 1px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 8px;
+    margin: auto;
+  }
+  .boton3{
+    background-color: var(--blue-soft);
+    color: white;
+    border: none;
+    padding: 21px;
+    font-size: 10.5px;
+    height: 19px;
+    width: 110px;
+    text-align: center;
+    padding: 16px 50px;
+    margin: 2px 1px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+
+
+  .select{
+    background-color: var(--blue-soft);
+    color: white;
+    border: none;
+    padding: 11px;
+    font-size: 16px;
+  }
+  .label1{
+    background-color: var(--blue-soft);
+    color: white;
+    border: none;
+    padding: 11px;
+    font-size: 16.5px;
+    font-family: roboto;/*Tipo de letra*/
+    font-weight: 900;
+  }
+  
+  /*Pagina Normal*/
+.header{
+    background-color: var(--brown-softly);
+    padding: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'open sans';
+    color: #FFFFFF;
+}
+.container-header{
+    margin-left: 20px;
+    font-size: 1.3rem;
+}
+/*Nuevo Prueba*/
+.container-header h1{/*Estilos de titulo de la pagina Veamos cuanto sabes de futbol*/
+    text-align: center;
+    font-weight:100;
+    margin:top ;
+    font-size: 2rem;
+    color: var(--white);
+    font-size: var(--lg);
+    line-height: var(--sm);
+    font-variant-ligatures: none;
+} 
+
+.navbar-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 60px;
+  }
+  .navbar-right ul li a {
+    text-decoration: none;
+    color: green;
+    border: 1px solid var(--white);
+    padding: 8px;
+    border-radius: 8px;
+  }
+  .navbar-right ul li a:hover {
+    border: 1px solid var(--hospital-green);
+    color: var(--hospital-green);
+  }
+  .navbar-email {
+    color: var(--blue-heaven);
+    cursor: pointer;
+    font-size: var(--sm);
+    margin-right: 12px;
+  }
+  /*Nuevo*/
+  .navbar-shopping-cart img{
+    width: 30px;
+    height:30px;
+  }
+  .navbar-shopping-cart {
+    position: relative;
+  }
+ 
+  .navbar-shopping-cart div {
+    width: 16px;
+    height: 16px;
+    background-color: var(--hospital-green);
+    border-radius: 50%;
+    font-size: var(--sm);
+    font-weight: bold;
+    position: absolute;
+    top: -6px;
+    right: -3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*Menu en Desktop*/
+  .desktop-menu {
+    position: absolute;
+    top: 60px;
+    right: 300px;
+    background: var(--blue-soft);
+    width: 60px;
+    height: auto;
+    border: 1px solid var(--very-light-pink);
+    border-radius: 6px;
+    padding: 10px 10px 0 10px;
+    font-size: x-small;
+  }
+  .desktop-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .desktop-menu ul li {
+    text-align: left;
+  }
+  .desktop-menu ul li:nth-child(1),
+  .desktop-menu ul li:nth-child(2) {
+    font-weight: thin;
+  }
+  .desktop-menu ul li:last-child {
+    padding-top: 20px;
+    border-top: 1px solid var(--very-light-pink);
+  }
+  .desktop-menu ul li:last-child a {
+    color: var(--blue-king);
+    font-size: var(--sm);
+  }
+  .desktop-menu ul li a {
+    color: var(--white);
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+    text-align: left;
+  }
+  /*Menu en Desktop2*/
+  .desktop-menu2 {
+    position: absolute;
+    top: 60px;
+    right: 200px;
+    background: var(--blue-soft);
+    width: 60px;
+    height: auto;
+    border: 1px solid var(--very-light-pink);
+    border-radius: 6px;
+    padding: 10px 10px 0 10px;
+    font-size: x-small;
+  }
+  .desktop-menu2 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .desktop-menu2 ul li {
+    text-align: left;
+  }
+  .desktop-menu2 ul li:nth-child(1),
+  .desktop-menu2 ul li:nth-child(2) {
+    font-weight: thin;
+  }
+  .desktop-menu2 ul li:last-child {
+    padding-top: 50px;
+    border-top: 1px solid var(--very-light-pink);
+  }
+  .desktop-menu2 ul li:last-child a {
+    color: var(--text-input-field);
+    font-size: var(--sm);
+  }
+  .desktop-menu2 ul li a {
+    color: var(--white);
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+    text-align: left;
+  }
+  /*Menu en Desktop3*/
+  .desktop-menu3 {
+    position: absolute;
+    top: 60px;
+    right: 90px;
+    background: var(--blue-soft);
+    width: 60px;
+    height: auto;
+    border: 1px solid var(--very-light-pink);
+    border-radius: 6px;
+    padding: 10px 10px 0 10px;
+    font-size: x-small;
+  }
+  .desktop-menu3 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .desktop-menu3 ul li {
+    text-align: left;
+  }
+  .desktop-menu3 ul li:nth-child(1),
+  .desktop-menu3 ul li:nth-child(2) {
+    font-weight: thin;
+  }
+  .desktop-menu3 ul li:last-child {
+    padding-top: 50px;
+    border-top: 1px solid var(--very-light-pink);
+  }
+  .desktop-menu3 ul li:last-child a {
+    color: var(--text-input-field);
+    font-size: var(--sm);
+  }
+  .desktop-menu3 ul li a {
+    color: var(--white);
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+    text-align: left;
+  }
+
+  
+/*Parte de la pagina*/
+.link{/*Estilos para el menu*/
+   margin-right:5px;
+   color: blue; 
+   text-decoration: none;
+   font-size: 15px;
+   border-radius: 10px;
+   padding: 10px;
+   transition: all 0.3s ease;
+}
+.link:hover{ /*Estilo para cuando el mouse pase por encima de las letras */
+    background-color: #34495E;/*Color de las letras cuando el mouse pasa por encima*/
+}
+
+form{ /**/
+    margin: 50px auto;
+    background-color: var(--blue-soft);
+    width: 500px;/*Ancho del cuadro de encuesta o form*/
+    padding: 2.5rem;
+    border-radius: 5px;
+}
+.form-grupos{/*Estilos para la clase form-grupos*/
+    display: flex;
+    flex-direction: column;/*para que los cuadros queden debajo de los textos*/
+    color: #FFF;/*Para ponerle color a la letra*/
+    font-size: 19px;/*Para el grosor de la letra*/
+    font-family: roboto;/*Tipo de letra*/
+    font-weight: 900;
+}
+input[type="text"]{/*Estilos de input tipo texto*/
+    margin: 15px 0; /*Para separa el texto de los cuadros*/
+    font-size: 20px;/*Para agrandar el tamaño de los cuadros*/
+    padding: 10px;/*Para agrandar el tamaño de los cuadros*/
+    border: none;/*Estilo de borde del cuadro*/
+    border-radius: 5px;/*Redondear el borde del cuadro*/
+    color: #2e4053;/*Color de la letra al escribir dentro de los cuadros*/    
+}
+input[type="email"]{/*Estilos de input tipo email*/
+    margin: 15px 0; /*Para separa el texto de los cuadros*/
+    font-size: 20px;/*Para agrandar el tamaño de los cuadros*/
+    padding: 10px;/*Para agrandar el tamaño de los cuadros*/
+    border: none;/*Estilo de borde del cuadro*/
+    border-radius: 5px;/*Redondear el borde del cuadro*/
+    color: #2e4053;/*Color de la letra al escribir dentro de los cuadros*/    
+}
+input[type="number"]{/*Estilos de input tipo number*/
+    margin: 15px 0; /*Para separa el texto de los cuadros*/
+    font-size: 20px;/*Para agrandar el tamaño de los cuadros*/
+    padding: 10px;/*Para agrandar el tamaño de los cuadros*/
+    border: none;/*Estilo de borde del cuadro*/
+    border-radius: 5px;/*Redondear el borde del cuadro*/
+    color: #2e4053;/*Color de la letra al escribir dentro de los cuadros*/    
+}
+p{
+    font-size: 21px;/*Grosor de todas nuestras etiquetas p*/
+}
+.selectOp{/*Estilos parala clase selectOp*/
+    margin: 15px 0; /*Para separa el texto de los cuadros*/
+    font-size: 20px;/*Para agrandar el tamaño de los cuadros*/
+    padding: 10px;/*Para agrandar el tamaño de los cuadros*/
+    border: none;/*Estilo de borde del cuadro*/
+    border-radius: 5px;/*Redondear el borde del cuadro*/
+    color: #2e4053;/*Color de la letra al escribir dentro de los cuadros*/ 
+    width: 100%;/*para estirar el cuadro de seleccion de esta clase*/
+}
+
+input[type="radio"]{/*Estilos para nuestro input de tipo radio*/
+    margin-bottom: 15px;  /*Estilos del circulo o radio de seleccion*/
+    font-family: 'roboto'; /*Estilo de la letra*/
+    font-weight: 700px; /*Grosor de la letra*/        
+}
+input[type="checkbox"]{/*Estilos para nuestro input de tipo checkbox*/
+    margin-bottom: 15px;  /*Estilos del circulo o radio de seleccion*/
+    font-family: 'Roboto'; /*Estilo de la letra*/
+    font-weight: 700px; /*Grosor de la letra*/        
+}
+#comentarios{/*Estilos para nuestro input con id commentarios*/
+    width: 97%;/*Para alargar el cuadro del comentario*/
+    height: 100px;/*Para ampliar hacia abajo el cuadro de texto de los comentarios*/
+    font-size: 1rem;/*Tamaño de letra paar escribir dentro del recuadro*/
+    color: #000;/*Color de letra de escritura dentro del cuadro*/
+}
+.button{ /*Estilos para el boton de enviar*/
+    margin-top: 25px;/*Para separarlo del recuadro anterior*/   
+}
+input[type="submit"]{/*Estilo para la entrada o el input de tipo submit*/
+    width: 100%;/*Para alargar el cuadro del comentario*/
+    padding: 10px;/*Para ampliar el cuadro del texto hacia abajo*/
+    font-size: 18px;/*Tamaño de la letra*/
+    border: none; /*estilo del borde de la caja--none se lo quita*/
+    border-radius: 5px;/*Redondea las esquinas del cuadro o caja*/
+    background-color: #2ecc71;/*Se le pone color al boton*/
+    color: #FFF;/*Se le pone color a la letra del cuadro*/
+    font-family: 'Roboto';/*Estilo de la letra dentro del cuadro*/
+    font-weight: 700;/*Grosor de la letra*/
+}
+input[type="submit"]:hover{/*Estilos para cuando se pase el mouse por ensima del boton cambie de color*/
+    background-color: #85c1e9;/*Seleccionamos el color para ese cambio cuando se pase el mouse*/
+}
+.footer{ /*Estilos para el pie de pagina*/
+    background-color: var(--brown-softly);/*Estilos del pie de pagina o footer*/
+    padding: 3px; /*uqta el espacio sobrante abajo de la pagina o del pie de pagina*/
+    display: flex;/*Pone un texto al lado del otro*/
+    justify-content: space-between;/*Separa los dos textos y los deja uno a cada lado de la pagina*/
+}
+.container-fot{/*Estilos para la clase interna del footer container-fot*/
+    margin-left: 20px;/*Para separar el texto de la margen izquierda*/
+    color: var(--white);/*Color del texto*/
+    font-size: 20px;/*Tamaño o grosor de letra*/
+    font-family: 'Open sans'; /*Tipo de letra*/
+}
+.container-cont{/*Estilos para la clase interna del footer container-fot*/
+    margin-right: 20px;/*Para separar el texto de la margen derecha*/
+    color: var(--white);/*Color del texto*/
+    font-size: 20px;/*Tamaño o grosor de letra*/
+    font-family: 'Open sans'; /*Tipo de letra*/
+}

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="estiloprueba.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>ENCUESTA CUANTO SABES DE FUTBOL</title>
+</head>
+<body>
+    <!--header en la pagina-->
+<header class="header">
+    <nav>        
+        <img src="./img/Logo NBASports3.jpeg" alt="menu" class="menu">
+    </nav>
+     <div class="container-header">
+        <h1>¡¡¡¡VEAMOS CUANTO SABES DE FUTBOL!!!!</h1>
+    </div>
+
+    
+    <!--<nav class="menu">
+        <a class="link" href="#">Inicio</a>
+        <a class="link" href="#">Formulario</a>
+        <a class="link" href="#">Nosotros</a>
+        <a class="link" href="#">Ayuda</a>
+    </nav>-->
+ <!--<nav>
+    <input type="button" id="Inicio"
+    name="Boton izquierdo" value="Inicio" 
+    onclick="informeBoton(this.id, this.name, this.value)"/>
+    <input type="button" id="Formulario"
+    name="Boton central" value="Formulario"
+    onclick="informeBoton(this.id, this.name, this.value)"/>
+    <input type="button" id="Nosotros"
+    name="Boton derecho" value="Nosotros"
+    onclick="informeBoton(this.id, this.name, this.value)"/>
+    <input type="button" id="Ayuda"
+    name="Boton derecho" value="Ayuda"
+    onclick="informeBoton(this.id, this.name, this.value)"/>
+    
+</nav>      -->
+<div>
+<button class="boton1"onclick="toggleMenu()">INICIO</button><!--click al botos de Menu-->
+  <div class="desktop-menu" id="desktop-menu">
+      <ul>
+        <li>
+          <a href="/" class="title">Mis Encuestas</a>
+        </li>
+  
+        <li>
+          <a href="/">Mis Resultados</a>
+        </li>        
+        <li>
+          <a href="/">Mi Ranking</a>
+        </li>
+        <li>
+          <a href="/">Salir</a>
+        </li>
+      </ul>
+    </div>
+    
+    
+    <button class="boton2"onclick="toggleMenu2()">NOTICIAS</button><!--click al botos de noticias-->
+      <div class="desktop-menu2" id="desktop-menu2">
+          <ul>
+            <li>
+              <a>Nacionales</a>
+            </li>          
+            <li>
+              <a >Locales</a>
+            </li>        
+            <li>
+              <a >Sudamerica</a>
+            </li>
+            <li>
+              <a >Europa</a>
+            </li>
+            <li>
+            <a >Asia</a>
+            </li>
+          </ul>
+        </div>
+        
+
+    <button class="boton3"onclick="toggleMenu3()">SELECCIONES</button><!--click al botos de noticias-->
+        <div class="desktop-menu3" id="desktop-menu3">
+            <ul>
+              <li>
+                <a>Mayores</a>
+              </li>          
+              <li>
+                <a >Sub23</a>
+              </li>        
+              <li>
+                <a >Sub20</a>
+              </li>
+              <li>
+                <a >Sub15</a>
+              </li>
+              <li>
+                <a>Futsal</a>
+              </li>
+            </ul>
+          </div>
+          <script src="./mainprueba.js"></script>          
+</div>     
+ 
+    
+    <!--Nuevo de prueba-->
+<div class="navbar-right">
+    <ul>
+     <!--<li class="navbar-email">nestor.ardila@gmail.com</li>--> 
+      <li class="navbar-shopping-cart">
+        <img src="./img/Logo2.png" alt="shopping cart">
+        <div>2</div>
+      </li>
+    </ul>
+  </div> 
+<!--Parete de la pagina-->  
+
+</header>
+<!--'Crear una lista desplegable html y css'--> 
+<label class="label1" for="lista-encuestas">Seleciona Tu Encuesta =></label>
+<select class="select" name="lista-encuestas" id="lista-encuestas">
+  <option value="mundiales">Mundiales</option>
+  <option value="copasAmerica">Copas America</option>
+  <option value="championsLeague">Champions League</option>
+  <option value="mundialClubes">Mundial de Clubes</option>
+  <option value="jugadores">Jugadores</option>
+  <option value="selecciones">Selecciones</option>
+  <option value="arbitros">Arbitros</option>
+</select>   
+<div class="desplegable">
+    <button class="boton">PUNTAJE ACTUAL</button>
+    <div class="links">
+        
+            <a href="/" class="title">Preguntas: 6</a>                    
+          
+            <a href="/">Correctas: 4</a>                 
+         
+            <a href="/">Incorrectas: 2</a>
+                       
+            <a href="/">Puntaje Total:80</a>          
+        
+      </div>
+</div>
+
+<!--Formulario de la pagina-->
+<form action="#" method="post">
+    <div class="form-grupos">
+        <label><b>Nombre</b></label>
+        <input type="text" name="name-label" id="nombre" placeholder="Ingresa tu nombre" required>
+    </div>
+    <div class="form-grupos">
+        <label><b>Pais</b></label>
+        <input type="text" name="pais-label" id="pais" placeholder="Ingresa tu pais" required>
+    </div>
+    <div class="form-grupos">
+        <label><b>E_mail</b></label>
+        <input type="email" name="email-label" id="mail" placeholder="Ingresa tu correo electronico" required>
+    </div>
+    <div class="form-grupos">
+        <label><b>Equipo favorito</b></label>
+        <input type="text" name="equipo-label" id="equipo" placeholder="Ingresa tu Equipo Favorito" required>
+    </div>
+    <div class="form-grupos">
+        <label><b>Edad (Opcional)</b></label>
+        <input type="number" name="edad-label" id="edad" placeholder="Ingresa tu edad" required min="15" max="99">
+    </div>
+    <div class="form-grupos">
+        <p>Sexo:
+            <input type="radio" name="hm" value="h"> Hombre
+            <input type="radio" name="hm" value="m"> Mujer
+        </p>
+    </div>
+    
+
+    <div class="form-grupos">
+        <p><b>Describe tu ocupacion</b></p>
+        <label>
+            <select name="ocupacion-usuario" id="select" class="selectOp">
+                <option disabled selected value>Selecciona tu ocupacion </option>
+                <option value="estudiante">Estudiante</option>
+                <option value="empleado">Empleado</option>
+                <option value="futbolista">Futbolista</option>
+                <option value="tecnico">Tecnico</option>
+                <option value="Desocupado">Desocupado</option>
+
+            </select>
+        </label>
+    </div>
+    <!-- Ahora el input de tipo radio-->
+   <div class="form-grupos">
+    <p><b>¿Que jugador tiene mas mundiales ganados en la historia?</b></p>
+
+    <label>
+        <input type="radio" name="opcion-usuario" id="pele">
+        <b>Pele</b>
+    </label>
+    <label>
+        <input type="radio" name="opcion-usuario" id="maradona">
+        <b>Maradona</b>
+    </label>
+    <label>
+        <input type="radio" name="opcion-usuario" id="zidane">
+        <b>Zidane</b>
+    </label>
+   </div>
+
+<!-- Ahora el input de tipo seleccion-->
+
+   <div class="form-grupos">
+    <p><b>¿Que equipo ha ganado mas titulos de champions league?</b></p>
+    <select name="lenguaje-op" id="lenguage" class="selectOp">
+        <option disabled selected value>Selecciona una opcion</option>
+        <option value="bayern-munich">Bayern Munich</option>
+        <option value="real-madrid">Real Madrid</option>
+        <option value="boca-juniors">Boca Juniors</option>
+        <option value="leverpool">Leverpool</option>
+        <option value="barcelona">Barcelona</option>        
+    </select>
+   </div>
+<!-- Ahora el input de tipo check box-->
+   <div class="form-grupos">
+    <p><b>¿Que equipos ha ganado mas de 4 copas libertadores de america?</b></p>
+    <label>
+        <input type="checkbox" name="real-madrid" id="selection-user">
+        <b>Real Madrid</b>
+    </label>
+    <label>
+        <input type="checkbox" name="boca-juniors" id="selection-user">
+        <b>Boca Juniors</b>
+    </label>
+    <label>
+        <input type="checkbox" name="independiente" id="selection-user">
+        <b>Independiente de Avellaneda</b>
+    </label>
+    <label>
+        <input type="checkbox" name="nacional" id="selection-user">
+        <b>Atletico nacional</b>
+    </label>
+    <label>
+        <input type="checkbox" name="river" id="selection-user">
+        <b>River Plate</b>
+    </label>
+    <label>
+        <input type="checkbox" name="olimpia" id="selection-user">
+        <b>Olimpia FC</b>
+    </label>
+    <label>
+        <input type="checkbox" name="sauPaulo" id="selection-user">
+        <b>Sao Paulo</b>
+    </label>
+
+   </div>
+
+   <div class="form-grupos">
+    <p><b>¿Quien es el maximo goleador de selecciones a nivel mundial?</b></p>
+    <label>
+        <input type="radio" name="opcion-usuario" id="pele">
+        <b>Pele</b>
+    </label>
+    <label>
+        <input type="radio" name="opcion-usuario" id="joseph Bican">
+        <b>Joseph Bican</b>
+    </label>
+    <label>
+        <input type="radio" name="opcion-usuario" id="cristiano Ronaldo">
+        <b>Cristiano Ronaldo</b>
+    </label>
+   </div>
+
+   <div class="form-grupos">
+    <p><b>¿Quien es el maximo asistidor de goles en el mundo?</b></p>
+    <label>
+        <input type="radio" name="opcion-usuario" id="pele">
+        <b>Pele</b>
+    </label>
+    <label>
+        <input type="radio" name="opcion-usuario" id="messi">
+        <b>Messi</b>
+    </label>
+    <label>
+        <input type="radio" name="opcion-usuario" id="d'Estefano">
+        <b>D'Estefano</b>
+    </label>
+   </div>
+
+   <div class="form-grupos">
+    <p><b>¿Que equipo ha ganado mas Copas America?</b></p>
+    <label>
+        <input type="radio" name="opcion-usuario" id="venezuela">
+        <b>Venezuela</b>
+    </label>
+    <label>
+        <input type="radio" name="opcion-usuario" id="uruguay">
+        <b>Uruguay</b>
+    </label>
+    <label>
+        <input type="radio" name="opcion-usuario" id="argentina">
+        <b>Argentina</b>
+    </label>
+   </div>
+   <div class="form-grupos">
+    <p><b>Escribenos tus comentarios</b></p>
+    <label>
+        <input type="text" name="comment" id="comentarios" placeholder="Escribe tus comentarios...">
+    </label>
+   </div>
+   <div class="button">
+    <input type="submit" value="Enviar">
+   </div>
+</form>
+<!--Footer de la pagina-->
+<footer class="footer">
+    <div class="container-fot">
+        <h2>Hecho por NBA Systems 2023</h2>
+    </div>
+    <div class="container-cont">
+        <h2>Estudiante Platzi NBA Sports 2023</h2>
+    </div>
+
+</footer>
+<script src="./mainprueba.js"></script>    
+</body>
+</html>
